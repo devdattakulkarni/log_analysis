@@ -101,9 +101,6 @@ result = mr.map_reduce(slurp.get_contents())
 
 sorted_result = sorted(result.iteritems(), key=operator.itemgetter(1), reverse=True)
 
-#print "-------"
-#sys.stdout.write('----------------')
-#sys.stdout.write('%s\n' % sorted_result)
 
 with open('/dev/out/reducer', 'a') as f:
 	f.write(json.dumps(sorted_result))
