@@ -6,10 +6,10 @@ Map reduce based log analysis using ZeroVM
 Files:
 
 1) mapper.py:
-   - creates $<$word, count$>$ tuples from input file
+   - creates (word, count) tuples from input file
 
 2) reducer.py
-   - creates <word, aggregate_count> tuples by aggregating
+   - creates (word, aggregate_count) tuples by aggregating
      counts from all the mappers
 
 3) query.json
