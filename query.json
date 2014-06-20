@@ -1,0 +1,49 @@
+[
+    {
+        "name": "mapper",
+        "exec": {
+            "path": "file://python:python"
+        },
+        "file_list": [
+            {
+                "device": "stdin",
+                "path": "swift://./python/mapper.py"
+            },
+            {
+                "device": "input",
+                "path": "swift://./solum/solum_team_meeting.*"
+            },
+            {
+                "device": "python"
+            }
+        ],
+        "connect": [
+            "reducer"
+        ]
+    },
+    {
+        "name": "reducer",
+        "exec": {
+            "path": "file://python:python"
+        },
+        "file_list": [
+            {
+                "device": "stdin",
+                "path": "swift://./python/reducer.py"
+            },
+            {
+                "device": "stdout",
+                "path": "swift://./output/output.txt",
+                "content_type": "text/plain"
+            },
+            {
+                "device": "python"
+            },
+            {
+                "device": "stderr",
+                "path": "swift://./python/reducer.err",
+                "content_type": "text/plain"
+            }
+        ]
+    }
+]
