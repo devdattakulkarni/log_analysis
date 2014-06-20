@@ -1,3 +1,7 @@
+# Starting point for this code is the example given here: 
+# http://h3manth.com/content/word-frequency-mapreduce-python
+# (Thanks Hemanth.HM for making it available)
+
 #!/python
 
 #!/usr/bin/python2.6                                                                                                                                                                                      

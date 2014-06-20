@@ -39,8 +39,3 @@ Som interesting conclusions from output.txt:
 
 
 Happy hacking.
-
-
-   
-
- 
